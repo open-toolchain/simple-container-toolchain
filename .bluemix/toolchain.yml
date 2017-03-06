@@ -43,7 +43,7 @@ services:
   hello-world-repo:
     service_id: githubpublic
     parameters:
-      repo_name: 'hello-containers-{{toolchain.name}}'
+      repo_name: 'hello-containers-{{timestamp}}'
       repo_url: 'https://github.com/Puquios/hello-containers'
       type: clone
       has_issues: true
@@ -52,7 +52,7 @@ services:
     parameters:
       services:
         - hello-world-repo
-      name: 'hello-world-{{toolchain.name}}'
+      name: 'hello-world-{{timestamp}}'
       ui-pipeline: true
       configuration:
         content:
