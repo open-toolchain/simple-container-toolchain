@@ -123,7 +123,7 @@ stages:
       #   CONCURRENT_VERSIONS Number       Number of versions of this container to leave active.  
       #                                    Default is 1
       #
-      #/bin/bash deployscripts/deploycontainer.sh
+      /bin/bash deployscripts/deploycontainer.sh
       
       # Deploy Container Group:
       # Optional environment properties (can be set directly in this script, or defined as environment properties):
@@ -141,7 +141,7 @@ stages:
       #   CONCURRENT_VERSIONS Number       Number of versions of this group to leave active.
       #                                    Default is 1
       # IF YOU WANT CONTAINER GROUPS .. uncomment the next line, and comment out the previous deployment line (/bin/bash deployscripts/deploygroup.sh)
-      /bin/bash deployscripts/deploygroup.sh
+      #/bin/bash deployscripts/deploygroup.sh
       
       RESULT=$?
       
